@@ -1,0 +1,14 @@
+version: "3"
+services:
+  hs-nginx:
+    image: monimage
+    restart: always
+    container_name: nginx-hidden_service
+    ports:
+      - 80:80
+    volumes:
+      - onion-url:/var/lib/tor/hostname
+      - htdocs:/var/www/html
+volumes:
+  onion-url:
+  htdocs:
