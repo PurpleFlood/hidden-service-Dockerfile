@@ -1,4 +1,5 @@
 FROM debian:latest
+EXPOSE 80
 MAINTAINER PurpleFl00d
 RUN apt update \
 && apt install -y tor nginx nano \
@@ -10,6 +11,7 @@ RUN apt update \
 && echo "HiddenServiceVersion 3" >> /etc/tor/torrc \
 && service tor restart \
 && service nginx start \
+
 
 
 
