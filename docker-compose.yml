@@ -7,5 +7,5 @@ services:
     ports:
       - 80:80
     volumes:
-      - .\data\onion/:/var/lib/tor/hostname
-      - .\data\htdocs:/var/www/html
+      - .\data\onion\:/var/lib/tor/hostname
+      - .\data\htdocs\:/var/www/html
