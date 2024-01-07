@@ -9,6 +9,3 @@ services:
     volumes:
       - onion-url:/var/lib/tor/hostname
       - htdocs:/var/www/html
-volumes:
-  onion-url:
-  htdocs:
